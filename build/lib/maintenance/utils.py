@@ -1,6 +1,6 @@
 import logging
 from django.conf import settings
-from django.utils.importlib import import_module
+from importlib import import_module
 from maintenance import api
 from maintenance.api import MaintenanceModeError
 from maintenance.management.lockfile import FileLock, LockFailed, AlreadyLocked, LockTimeout, NotLocked

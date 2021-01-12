@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-site-maintenance',
-    version='1.0.0',
+    version='1.0.1',
     url="https://github.com/harryjmoss/django-site-maintenance-py3",
     author="Original: Stefano Apostolico, Current maintainer: Harry Moss",
     license="MIT License",
