@@ -1,5 +1,6 @@
-from django.conf import settings, UserSettingsHolder
+from django.conf import UserSettingsHolder, settings
 from django.test.testcases import TestCase
+
 
 class override_settings(object):
     """
@@ -38,10 +39,12 @@ class override_settings(object):
             test_func._post_teardown = _post_teardown
             return test_func
         else:
+
             @wraps(test_func)
             def inner(*args, **kwargs):
                 with self:
                     return test_func(*args, **kwargs)
+
         return inner
 
     def enable(self):
