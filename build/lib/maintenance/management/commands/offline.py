@@ -1,3 +1,4 @@
+from optparse import make_option
 from optparse import OptionParser
 import datetime
 from django.contrib.sessions.models import Session
@@ -26,6 +27,10 @@ class Command(LabelCommand):
         dest='timeout',
         default=60,
         help='Time to wait for pending sessions')
+
+
+    #ptions_list = LabelCommand.add_arguments(options_parser)
+
     
     args = '|'.join(opts )
     label = 'command'
