@@ -1,6 +1,6 @@
 Django Site Maintenance (DSM) for Modern Python and Django
 =============================
-Originally forked from https://github.com/saxix/django-site-maintenance, upgraded for modern Python/Django combinations.
+Originally forked from https://github.com/saxix/django-site-maintenance at release/0.1.3, upgraded for modern Python/Django combinations.
 
 Maintenance mode utilities that allows you to put your django project into offline mode via command line.
 
